@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --env -A src/main.ts",
+    "generate": "deno run -A npm:@graphql-codegen/cli/graphql-codegen --config codegen.yml",
+    "install": "deno cache --node-modules-dir npm:@graphql-codegen/typescript npm:@graphql-codegen/typescript-resolvers"
+  },
+  "imports": {
+    "@graphql-codegen/typescript": "npm:@graphql-codegen/typescript@^4.0.6",
+    "@graphql-codegen/typescript-resolvers": "npm:@graphql-codegen/typescript-resolvers@^4.0.6",
+    "@honojs/graphql-server": "npm:@honojs/graphql-server@^0.1.2",
+    "apollo-server-express": "npm:apollo-server-express@^3.13.0",
+    "express": "npm:express@^4.19.1",
+    "graphql": "npm:graphql@^16.8.1",
+    "hono": "npm:hono@^4.1.3"
+  }
+}

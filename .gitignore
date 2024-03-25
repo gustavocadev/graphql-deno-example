@@ -1,0 +1,4 @@
+deno.lock
+src/__generated__
+node_modules
+.env
